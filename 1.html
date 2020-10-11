@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>imme jquery</title>
+</head>
+
+<body>
+
+  <div id="a">ab1</div>
+
+  <div id="b" c="d">bbb</div>
+
+  <div class="e">eee</div>
+
+  <div f="g1">fg1</div>
+
+  <p f="g2">fg2</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function init() {
+      // var a1 = document.querySelector('#a'); // Vanilla Selector
+      // console.log(a1.textContent);
+
+      // var a2 = $('#a'); // jquery Selector : 선택자
+      // console.log(a2.text());
+
+      // var b1 = $('#b');
+      // console.log(b1.text());
+
+      // var b2 = $('#b'); // jquery Selector > id = #
+      // console.log(b2.attr('c')); // User defined attribute(사용자 정의 속성)
+      // console.log(b2.attr('id'));
+
+      // var e1 = $('.e');
+      // console.log(e1.text());
+      // console.log(e1.attr('class'));
+
+      // var f1 = $('[f]');
+      // console.log(f1.text());
+
+      var f1 = $('div[f]');
+      console.log(f1.text());
+    }
+
+    // init();
+
+    $(init);
+  </script>
+</body>
+
+</html>

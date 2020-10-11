@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>imme jquery</title>
+</head>
+
+<body>
+
+  <div id="result"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function init() {
+      // $.get('3.txt', function (data) {
+      //   console.log(data);
+      // });
+
+      // $.get('31.html', function (data) {
+      //   console.log(data);
+      // });
+
+      $.get('3.json', function (data) {
+        var a = data[0].name;
+        console.log(a);
+        $('#result').text(a);
+      });
+    }
+
+    $(init);
+  </script>
+</body>
+
+</html>
